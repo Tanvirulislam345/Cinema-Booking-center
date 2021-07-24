@@ -1,0 +1,13 @@
+.header-carousel img {
+    height: 455px;
+}
+
+.header-carousel h4,
+.header-carousel p {
+    color: aliceblue;
+}
+
+.movies-card img {
+    height: 260px !important;
+    width: 100%;
+}
