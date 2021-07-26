@@ -15,7 +15,7 @@
     <title>Cinema Ticket Booking</title>
 </head>
 
-<body>
+<body style="background-color: #E5E5E5;">
     <header>
         <!-- code for navigation  -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -32,7 +32,7 @@
                             <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#upcomming">UpComming</a>
+                            <a class="nav-link" href="#movies">UpComming</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#movies">Movies</a>
@@ -66,7 +66,7 @@
         </nav>
 
         <!-- home section -->
-        <section class="container" id="home">
+        <section class="container shadow-lg py-3" id="home">
             <div class="bg-light home d-flex justify-content-center align-items-center">
                 <div class=" text-light ">
                     <div>
@@ -85,9 +85,29 @@
     </header>
 
     <main>
+        <!-- categories section  -->
+        <section class="container my-4 " id="movies">
+            <div class="row g-4 ">
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                    <div class=" border bg-light rounded ">
+                        <button type="button " class="btn btn-outline-danger w-100 "><a href="#bangla" class="text-decoration-none text-dark "><h5>Bangla Movies</h5></a></button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                    <div class=" border bg-light rounded ">
+                        <button type="button " class="btn btn-outline-danger w-100 "><a href="#hindi" class="text-decoration-none text-dark "><h5>Hindi Movies</h5></a></button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                    <div class=" border bg-light rounded ">
+                        <button type="button " class="btn btn-outline-danger w-100 "><a href="#english" class="text-decoration-none text-dark "><h5>English Movies</h5></a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- code for carousel  -->
-        <section class="container header-carousel my-5" id="upcomming">
+        <section class="container header-carousel my-4 shadow-lg py-3 bg-light">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -127,29 +147,9 @@
             </button>
             </div>
         </section>
-        <!-- categories section  -->
-        <section class="container my-4 " id="movies">
-            <div class="row g-4 ">
-                <div class="col-lg-4 col-md-6 col-sm-12 ">
-                    <div class=" border bg-light rounded ">
-                        <button type="button " class="btn btn-outline-danger w-100 "><a href="#bangla" class="text-decoration-none text-dark "><h5>Bangla Movies</h5></a></button>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 ">
-                    <div class=" border bg-light rounded ">
-                        <button type="button " class="btn btn-outline-danger w-100 "><a href="#hindi" class="text-decoration-none text-dark "><h5>Bangla Movies</h5></a></button>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 ">
-                    <div class=" border bg-light rounded ">
-                        <button type="button " class="btn btn-outline-danger w-100 "><a href="#english" class="text-decoration-none text-dark "><h5>Bangla Movies</h5></a></button>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="container movies-card ">
-            <h2 class="py-2 text-info " id="bangla">Hollyhood</h2>
+        <section class="container movies-card shadow-lg pb-3 bg-light">
+            <h2 class="py-2 text-info " id="bangla">Bangladeshi</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-3 ">
                 <div class="col ">
                     <div class="card h-100 border-0 shadow-lg ">
@@ -159,68 +159,29 @@
                             <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <h4 class="text-warning ">$555</h4>
                         </div>
-                        <div class="card-footer border-0 p-0 d-flex justify-content-center bg-success ">
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="card h-100 ">
-                        <img src="images/now/now2.jpg " class="card-img-top " alt="... ">
-                        <div class="card-body ">
-                            <h5 class="card-title text-warning ">The Expandables</h5>
-                            <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <h4 class="text-warning ">$555</h4>
-                        </div>
-                        <div class="card-footer border-0 p-0 d-flex justify-content-center bg-success ">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="card h-100 ">
-                        <img src="images/now/now3habit.jpg " class="card-img-top " alt="... ">
-                        <div class="card-body ">
-                            <h5 class="card-title text-warning ">The Expandables</h5>
-                            <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <h4 class="text-warning ">$555</h4>
-                        </div>
-                        <div class="card-footer border-0 p-0 d-flex justify-content-center bg-success ">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="py-2 text-info " id="hindi">Hollyhood</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-3 ">
-                <div class="col ">
-                    <div class="card h-100 border-0 shadow-lg ">
-                        <img src="images/now/now1.jpg " class="card-img-top rounded " alt="... ">
-                        <div class="card-body ">
-                            <h5 class="card-title text-warning ">The Expandables</h5>
-                            <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <h4 class="text-warning ">$555</h4>
-                        </div>
-                        <div class="card-footer border-0 p-0 d-flex justify-content-center bg-success ">
+                        <!-- card footer  -->
+                        <div class="card-footer border-0 p-0">
                             <!-- Button trigger modal -->
-                            <button type="button " class="btn btn-outline-danger w-100 text-dark " data-bs-toggle="modal " data-bs-target="#exampleModal ">
-                            Buy Now
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Buy Now
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-                                <div class="modal-dialog modal-dialog-centered ">
-                                    <div class="modal-content ">
-                                        <div class="modal-header ">
-                                            <h5 class="modal-title " id="exampleModalLabel ">Buy ticket</h5>
-                                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Buy Ticket</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body ">
-                                            are you sign up this website??
+                                        <div class="modal-body text-warning">
+                                            are you sign up this site ??
                                         </div>
-                                        <div class="modal-footer ">
-                                            <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Cancel</button>
-                                            <button type="button " class="btn btn-primary "><a href=" Form.html "  target="_blank " class="text-decoration-none text-light ">No</a></button>
-                                            <button type="button " class="btn btn-primary ">Yes</button>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">NO</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">Yes</a></button>
                                         </div>
                                     </div>
                                 </div>
@@ -236,27 +197,28 @@
                             <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <h4 class="text-warning ">$555</h4>
                         </div>
-                        <div class="card-footer border-0 p-0 d-flex justify-content-center bg-success ">
+                        <!-- card footer  -->
+                        <div class="card-footer border-0 p-0">
                             <!-- Button trigger modal -->
-                            <button type="button " class="btn btn-outline-danger w-100 text-dark " data-bs-toggle="modal " data-bs-target="#exampleModal ">
-                            Buy Now
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Buy Now
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-                                <div class="modal-dialog modal-dialog-centered ">
-                                    <div class="modal-content ">
-                                        <div class="modal-header ">
-                                            <h5 class="modal-title " id="exampleModalLabel ">Buy ticket</h5>
-                                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Buy Ticket</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body ">
-                                            are you sign up this website??
+                                        <div class="modal-body text-warning">
+                                            are you sign up this site ??
                                         </div>
-                                        <div class="modal-footer ">
-                                            <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Cancel</button>
-                                            <button type="button " class="btn btn-primary "><a href=" Form.html "  target="_blank " class="text-decoration-none text-light ">No</a></button>
-                                            <button type="button " class="btn btn-primary ">Yes</button>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">NO</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">Yes</a></button>
                                         </div>
                                     </div>
                                 </div>
@@ -272,27 +234,28 @@
                             <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <h4 class="text-warning ">$555</h4>
                         </div>
-                        <div class="card-footer border-0 p-0 d-flex justify-content-center bg-success ">
+                        <!-- card footer  -->
+                        <div class="card-footer border-0 p-0">
                             <!-- Button trigger modal -->
-                            <button type="button " class="btn btn-outline-danger w-100 text-dark " data-bs-toggle="modal " data-bs-target="#exampleModal ">
-                            Buy Now
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Buy Now
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-                                <div class="modal-dialog modal-dialog-centered ">
-                                    <div class="modal-content ">
-                                        <div class="modal-header ">
-                                            <h5 class="modal-title " id="exampleModalLabel ">Buy ticket</h5>
-                                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Buy Ticket</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body ">
-                                            are you sign up this website??
+                                        <div class="modal-body text-warning">
+                                            are you sign up this site ??
                                         </div>
-                                        <div class="modal-footer ">
-                                            <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Cancel</button>
-                                            <button type="button " class="btn btn-primary "><a href=" Form.html "  target="_blank " class="text-decoration-none text-light ">No</a></button>
-                                            <button type="button " class="btn btn-primary ">Yes</button>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">NO</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">Yes</a></button>
                                         </div>
                                     </div>
                                 </div>
@@ -301,7 +264,7 @@
                     </div>
                 </div>
             </div>
-            <h2 class="py-2 text-info " id="english">Hollyhood</h2>
+            <h2 class="py-2 text-info " id="hindi">Hindi</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-3 ">
                 <div class="col ">
                     <div class="card h-100 border-0 shadow-lg ">
@@ -311,27 +274,28 @@
                             <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <h4 class="text-warning ">$555</h4>
                         </div>
-                        <div class="card-footer border-0 p-0 d-flex justify-content-center bg-success ">
+                        <!-- card footer  -->
+                        <div class="card-footer border-0 p-0">
                             <!-- Button trigger modal -->
-                            <button type="button " class="btn btn-outline-danger w-100 text-dark " data-bs-toggle="modal " data-bs-target="#exampleModal ">
-                            Buy Now
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Buy Now
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-                                <div class="modal-dialog modal-dialog-centered ">
-                                    <div class="modal-content ">
-                                        <div class="modal-header ">
-                                            <h5 class="modal-title " id="exampleModalLabel ">Buy ticket</h5>
-                                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Buy Ticket</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body ">
-                                            are you sign up this website??
+                                        <div class="modal-body text-warning">
+                                            are you sign up this site ??
                                         </div>
-                                        <div class="modal-footer ">
-                                            <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Cancel</button>
-                                            <button type="button " class="btn btn-primary "><a href=" Form.html "  target="_blank " class="text-decoration-none text-light ">No</a></button>
-                                            <button type="button " class="btn btn-primary ">Yes</button>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">NO</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">Yes</a></button>
                                         </div>
                                     </div>
                                 </div>
@@ -347,27 +311,28 @@
                             <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <h4 class="text-warning ">$555</h4>
                         </div>
-                        <div class="card-footer border-0 p-0 d-flex justify-content-center bg-success ">
+                        <!-- card footer  -->
+                        <div class="card-footer border-0 p-0">
                             <!-- Button trigger modal -->
-                            <button type="button " class="btn btn-outline-danger w-100 text-dark " data-bs-toggle="modal " data-bs-target="#exampleModal ">
-                            Buy Now
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Buy Now
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-                                <div class="modal-dialog modal-dialog-centered ">
-                                    <div class="modal-content ">
-                                        <div class="modal-header ">
-                                            <h5 class="modal-title " id="exampleModalLabel ">Buy ticket</h5>
-                                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Buy Ticket</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body ">
-                                            are you sign up this website??
+                                        <div class="modal-body text-warning">
+                                            are you sign up this site ??
                                         </div>
-                                        <div class="modal-footer ">
-                                            <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Cancel</button>
-                                            <button type="button " class="btn btn-primary "><a href=" Form.html "  target="_blank " class="text-decoration-none text-light ">No</a></button>
-                                            <button type="button " class="btn btn-primary ">Yes</button>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">NO</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">Yes</a></button>
                                         </div>
                                     </div>
                                 </div>
@@ -383,27 +348,142 @@
                             <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <h4 class="text-warning ">$555</h4>
                         </div>
-                        <div class="card-footer border-0 p-0 d-flex justify-content-center bg-success ">
+                        <!-- card footer  -->
+                        <div class="card-footer border-0 p-0">
                             <!-- Button trigger modal -->
-                            <button type="button " class="btn btn-outline-danger w-100 text-dark " data-bs-toggle="modal " data-bs-target="#exampleModal ">
-                            Buy Now
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Buy Now
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-                                <div class="modal-dialog modal-dialog-centered ">
-                                    <div class="modal-content ">
-                                        <div class="modal-header ">
-                                            <h5 class="modal-title " id="exampleModalLabel ">Buy ticket</h5>
-                                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Buy Ticket</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body ">
-                                            are you sign up this website??
+                                        <div class="modal-body text-warning">
+                                            are you sign up this site ??
                                         </div>
-                                        <div class="modal-footer ">
-                                            <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Cancel</button>
-                                            <button type="button " class="btn btn-primary "><a href=" Form.html "  target="_blank " class="text-decoration-none text-light ">No</a></button>
-                                            <button type="button " class="btn btn-primary ">Yes</button>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">NO</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">Yes</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="py-2 text-info " id="english">English</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-3 ">
+                <div class="col ">
+                    <div class="card h-100 border-0 shadow-lg ">
+                        <img src="images/now/now1.jpg " class="card-img-top rounded " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-warning ">The Expandables</h5>
+                            <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h4 class="text-warning ">$555</h4>
+                        </div>
+                        <!-- card footer  -->
+                        <div class="card-footer border-0 p-0">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Buy Now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Buy Ticket</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-warning">
+                                            are you sign up this site ??
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">NO</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">Yes</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card h-100 ">
+                        <img src="images/now/now2.jpg " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-warning ">The Expandables</h5>
+                            <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h4 class="text-warning ">$555</h4>
+                        </div>
+                        <!-- card footer  -->
+                        <div class="card-footer border-0 p-0">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Buy Now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Buy Ticket</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-warning">
+                                            are you sign up this site ??
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">NO</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">Yes</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card h-100 ">
+                        <img src="images/now/now3habit.jpg " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title text-warning ">The Expandables</h5>
+                            <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h4 class="text-warning ">$555</h4>
+                        </div>
+                        <!-- card footer  -->
+                        <div class="card-footer border-0 p-0">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Buy Now
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Buy Ticket</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-warning">
+                                            are you sign up this site ??
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">NO</a></button>
+                                            <button type="button" class="btn btn-primary"><a href="Form.html" class="text-decoration-none text-light">Yes</a></button>
                                         </div>
                                     </div>
                                 </div>
