@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in form using flex</title>
+    <script src="https://kit.fontawesome.com/85ceaecc59.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+        }
+        /* nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: brown;
+        }
+        nav a{
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.7em;
+            font-weight: 700;
+            color: black;
+            margin-right: 20px;
+            padding: 10px;
+        } */
+        
+        .loginContainer {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .loginForm {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        
+        .loginForm input,
+        button {
+            margin-top: 20px;
+            padding-left: 5px;
+            font-size: 1.5em;
+            border: 2px solid lightgrey;
+        }
+        
+        .loginForm button {
+            background-color: red;
+            color: whitesmoke;
+            font-weight: 700;
+            padding: 5px;
+        }
+        
+        .loginForm button:hover {
+            background-color: rgb(2, 116, 2);
+        }
+        
+        .loginForm h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+        <nav>
+            <span class="leftNav">
+                <a href="#">Home</a>
+                <a href="#">product</a>
+                <a href="#">About us</a>
+                <a href="#">Order</a>
+            </span>
+            <span>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+            </span>
+
+        </nav>
+    </header> -->
+    <div class="loginContainer">
+        <form action="" class="loginForm">
+            <h2>Login form</h2>
+            <input type="text" name="text" placeholder="Enter your name" id="text" required>
+            <input type="email" name="email" placeholder="Enter your email" id="eamil" required>
+            <input type="password" name="password" placeholder="Enter your password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
